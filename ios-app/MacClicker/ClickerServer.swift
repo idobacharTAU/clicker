@@ -3,6 +3,9 @@ import ApplicationServices
 import CoreGraphics
 import Foundation
 import Network
+import os
+
+private let logger = Logger(subsystem: "com.idobachar.slideclicker.mac", category: "server")
 
 /// Listens for iPhones (advertised over Bonjour), pairs them with a one-time code,
 /// and turns "next"/"prev" into Right/Left arrow key presses for the frontmost app.
@@ -27,7 +30,7 @@ final class ClickerServer: ObservableObject {
 
     @Published private(set) var listenerState: ListenerState = .starting
     @Published private(set) var pairingCode = ClickerProtocol.randomCode() {
-        didSet { debugLog("pairing code \(pairingCode)") }
+        didSet { debugLog("new pairing code") }
     }
     @Published private(set) var pairedDevices: [PairedDevice] = []
     @Published private(set) var sessions: [LiveSession] = []
@@ -66,7 +69,6 @@ final class ClickerServer: ObservableObject {
             let granted = AXIsProcessTrusted()
             if self?.accessibilityGranted != granted { self?.accessibilityGranted = granted }
         }
-        debugLog("pairing code \(pairingCode)")
         startListener()
     }
 
@@ -180,6 +182,7 @@ final class ClickerServer: ObservableObject {
 
     /// Returns the new shared secret if the code matches.
     fileprivate func pair(code: String, deviceID: String, name: String) -> String? {
+        logger.info("pair attempt from \(name, privacy: .public)")
         guard ClickerProtocol.safeEquals(code, pairingCode) else {
             failedPairings += 1
             if failedPairings >= 10 { newPairingCode() } // limit guessing
@@ -215,9 +218,7 @@ final class ClickerServer: ObservableObject {
     }
 
     private func debugLog(_ text: String) {
-        #if DEBUG
-        NSLog("[clicker] %@", text)
-        #endif
+        logger.info("\(text, privacy: .public)")
     }
 
     private func savePaired() {
@@ -326,6 +327,7 @@ private final class Connection {
     }
 
     private func handle(_ line: String) {
+        logger.debug("recv #\(self.id): \(line.split(separator: " ").first ?? "", privacy: .public)")
         let parts = line.split(separator: " ", maxSplits: 3, omittingEmptySubsequences: true).map(String.init)
         guard let command = parts.first?.lowercased() else { return }
 

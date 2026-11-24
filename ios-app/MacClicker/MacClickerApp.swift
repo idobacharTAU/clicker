@@ -161,7 +161,8 @@ struct ServerPanel: View {
 
     private func spaced(_ code: String) -> String {
         let mid = code.index(code.startIndex, offsetBy: code.count / 2)
-        return "\(code[..<mid]) \(code[mid...])"
+        // Left-to-right isolate: in an RTL layout "123 456" would otherwise render as "456 123".
+        return "\u{2066}\(code[..<mid])\u{2009}\(code[mid...])\u{2069}"
     }
 
     private var statusColor: Color {
