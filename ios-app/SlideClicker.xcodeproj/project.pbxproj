@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F23E61770BCBA116E1529AC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 414DC2F6ABB8D32A23BA2A9A /* PrivacyInfo.xcprivacy */; };
+		2931E07AA3310158594C8010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29496E65C4C28C70AC0AA6C8 /* ContentView.swift */; };
+		3AA5420FDF38EBEB02312493 /* ClickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E3796339939980910055CF /* ClickerProtocol.swift */; };
+		5E814A82353F8DE952BB704A /* ClickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E3796339939980910055CF /* ClickerProtocol.swift */; };
+		60390903FE41580C42FDBCFF /* SlideClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9DA864390DA553F75A48 /* SlideClickerApp.swift */; };
+		74B8A4571FB5C29FD40D4055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EA59581D24D2C0D63D3CA4 /* Assets.xcassets */; };
+		7B1F2418A34A98D18B047273 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C3A786F1D5CB2C33533A14A2 /* PrivacyInfo.xcprivacy */; };
+		7FEA2A6CBB32057E10951A80 /* MacClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5ED6D5EF7B36E2CC63FD1 /* MacClickerApp.swift */; };
+		87A7CBF647428A7FB92BD683 /* ClickerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6C6F67E6BF2D8BC3351DA4 /* ClickerClient.swift */; };
+		8AD687700E160BAA7C144013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16EEE3F42930994D1D9196F /* Assets.xcassets */; };
+		A614794E9A51AEDB0681832A /* ClickerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42079C50911B3C508050978F /* ClickerServer.swift */; };
+		BDF3DB494826FAADFC4DA72B /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269AB50743472EA4C975CCF /* VolumeButtons.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		260C30F4D276AAD9367E6C24 /* MacClicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacClicker.entitlements; sourceTree = "<group>"; };
+		29496E65C4C28C70AC0AA6C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D5A9DA864390DA553F75A48 /* SlideClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideClickerApp.swift; sourceTree = "<group>"; };
+		414DC2F6ABB8D32A23BA2A9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		42079C50911B3C508050978F /* ClickerServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerServer.swift; sourceTree = "<group>"; };
+		4269AB50743472EA4C975CCF /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
+		63281710E495ED11C11CF294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		69E3796339939980910055CF /* ClickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerProtocol.swift; sourceTree = "<group>"; };
+		8A42CD7DCFA8C93647886804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AA6C6F67E6BF2D8BC3351DA4 /* ClickerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerClient.swift; sourceTree = "<group>"; };
+		B0B5ED6D5EF7B36E2CC63FD1 /* MacClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacClickerApp.swift; sourceTree = "<group>"; };
+		C3A786F1D5CB2C33533A14A2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DC9B86E736490835E8F428D2 /* MacClicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3A6737935BE38C00ECA626 /* SlideClicker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SlideClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16EEE3F42930994D1D9196F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2EA59581D24D2C0D63D3CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		35851CE2EA23E0CB8EF53B37 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				69E3796339939980910055CF /* ClickerProtocol.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3671E0CBA36AE6616455FE5D /* MacClicker */ = {
+			isa = PBXGroup;
+			children = (
+				E16EEE3F42930994D1D9196F /* Assets.xcassets */,
+				42079C50911B3C508050978F /* ClickerServer.swift */,
+				63281710E495ED11C11CF294 /* Info.plist */,
+				260C30F4D276AAD9367E6C24 /* MacClicker.entitlements */,
+				B0B5ED6D5EF7B36E2CC63FD1 /* MacClickerApp.swift */,
+				414DC2F6ABB8D32A23BA2A9A /* PrivacyInfo.xcprivacy */,
+			);
+			path = MacClicker;
+			sourceTree = "<group>";
+		};
+		39423504607A109F49880FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B86E736490835E8F428D2 /* MacClicker.app */,
+				DE3A6737935BE38C00ECA626 /* SlideClicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C118AD5512664E7F7F22A19 = {
+			isa = PBXGroup;
+			children = (
+				3671E0CBA36AE6616455FE5D /* MacClicker */,
+				35851CE2EA23E0CB8EF53B37 /* Shared */,
+				E88CC11310E2554C7C97E602 /* SlideClicker */,
+				39423504607A109F49880FBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E88CC11310E2554C7C97E602 /* SlideClicker */ = {
+			isa = PBXGroup;
+			children = (
+				F2EA59581D24D2C0D63D3CA4 /* Assets.xcassets */,
+				AA6C6F67E6BF2D8BC3351DA4 /* ClickerClient.swift */,
+				29496E65C4C28C70AC0AA6C8 /* ContentView.swift */,
+				8A42CD7DCFA8C93647886804 /* Info.plist */,
+				C3A786F1D5CB2C33533A14A2 /* PrivacyInfo.xcprivacy */,
+				3D5A9DA864390DA553F75A48 /* SlideClickerApp.swift */,
+				4269AB50743472EA4C975CCF /* VolumeButtons.swift */,
+			);
+			path = SlideClicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AE09C4DCD5D91D8799A8911 /* SlideClicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2AD5040636A38535835A550 /* Build configuration list for PBXNativeTarget "SlideClicker" */;
+			buildPhases = (
+				B7A8AB990476B9236FB21FD5 /* Sources */,
+				C971E9C508BEB586BE140A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideClicker;
+			packageProductDependencies = (
+			);
+			productName = SlideClicker;
+			productReference = DE3A6737935BE38C00ECA626 /* SlideClicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48AFDD8E9457BF2784622BE /* MacClicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A995A69B53643EB95B58E76 /* Build configuration list for PBXNativeTarget "MacClicker" */;
+			buildPhases = (
+				502DD097BE9D8EEDCCDAA32D /* Sources */,
+				F08D51AEED9A43D83DDDA406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacClicker;
+			packageProductDependencies = (
+			);
+			productName = MacClicker;
+			productReference = DC9B86E736490835E8F428D2 /* MacClicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13F80AF3BE9B88CF4855FD62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1AE09C4DCD5D91D8799A8911 = {
+						DevelopmentTeam = 6R6WU3R8XA;
+						ProvisioningStyle = Automatic;
+					};
+					D48AFDD8E9457BF2784622BE = {
+						DevelopmentTeam = 6R6WU3R8XA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 57946EF6318F274D9D5394EC /* Build configuration list for PBXProject "SlideClicker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5C118AD5512664E7F7F22A19;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 39423504607A109F49880FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AE09C4DCD5D91D8799A8911 /* SlideClicker */,
+				D48AFDD8E9457BF2784622BE /* MacClicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C971E9C508BEB586BE140A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B8A4571FB5C29FD40D4055 /* Assets.xcassets in Resources */,
+				7B1F2418A34A98D18B047273 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F08D51AEED9A43D83DDDA406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD687700E160BAA7C144013 /* Assets.xcassets in Resources */,
+				1F23E61770BCBA116E1529AC /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		502DD097BE9D8EEDCCDAA32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA5420FDF38EBEB02312493 /* ClickerProtocol.swift in Sources */,
+				A614794E9A51AEDB0681832A /* ClickerServer.swift in Sources */,
+				7FEA2A6CBB32057E10951A80 /* MacClickerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A8AB990476B9236FB21FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A7CBF647428A7FB92BD683 /* ClickerClient.swift in Sources */,
+				5E814A82353F8DE952BB704A /* ClickerProtocol.swift in Sources */,
+				2931E07AA3310158594C8010 /* ContentView.swift in Sources */,
+				60390903FE41580C42FDBCFF /* SlideClickerApp.swift in Sources */,
+				BDF3DB494826FAADFC4DA72B /* VolumeButtons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		012ABF1715B2313BFED35533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6R6WU3R8XA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		02D277DF9476F990ABB21C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlideClicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idobachar.slideclicker;
+				PRODUCT_NAME = SlideClicker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C7A353708F0866E84BDD7A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacClicker/MacClicker.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacClicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idobachar.slideclicker.mac;
+				PRODUCT_NAME = Clicker;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF1F95B69509D3E57DB1CE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlideClicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idobachar.slideclicker;
+				PRODUCT_NAME = SlideClicker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D4AF5AF2757F214932515979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6R6WU3R8XA;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB6B9388856A844AC5FD8098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacClicker/MacClicker.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacClicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idobachar.slideclicker.mac;
+				PRODUCT_NAME = Clicker;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57946EF6318F274D9D5394EC /* Build configuration list for PBXProject "SlideClicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF5AF2757F214932515979 /* Debug */,
+				012ABF1715B2313BFED35533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A995A69B53643EB95B58E76 /* Build configuration list for PBXNativeTarget "MacClicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6B9388856A844AC5FD8098 /* Debug */,
+				C7A353708F0866E84BDD7A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2AD5040636A38535835A550 /* Build configuration list for PBXNativeTarget "SlideClicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1F95B69509D3E57DB1CE26 /* Debug */,
+				02D277DF9476F990ABB21C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13F80AF3BE9B88CF4855FD62 /* Project object */;
+}
